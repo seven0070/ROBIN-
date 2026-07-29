@@ -1,0 +1,8 @@
+[package]
+name = "kairn"
+version = "0.1.0"
+edition = "2021"
+description = "Kairn skill compiler — turns manifests into capability-checked code"
+
+[dependencies]
+aergon = { path = "../aergon" }

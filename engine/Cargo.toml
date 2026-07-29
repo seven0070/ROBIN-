@@ -1,0 +1,9 @@
+[package]
+name = "engine"
+version = "0.1.0"
+edition = "2021"
+description = "Robin 50M memory-traversal intelligence engine"
+
+[dependencies]
+aergon = { path = "../aergon" }
+x86_64 = "0.15"
