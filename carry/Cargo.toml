@@ -1,0 +1,21 @@
+[package]
+name = "carry"
+version = "0.1.0"
+edition = "2021"
+description = "Carry OS — bare-metal boot entry that wakes Robin"
+
+[[bin]]
+name = "carry"
+path = "src/main.rs"
+test = false
+bench = false
+
+[dependencies]
+aergon = { path = "../aergon" }
+engine = { path = "../engine" }
+bootloader = "0.9"
+x86_64 = "0.15"
+
+[package.metadata.bootimage]
+test-success-exit-code = 33
+build-command = ["build"]

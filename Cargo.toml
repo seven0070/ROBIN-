@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "aergon",      # The Microkernel
+    "carry",       # The OS / Boot initialization
+    "engine",      # 50M Graph Traversal Engine
+    "kairn",       # Skill Compiler
+]
+resolver = "2"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+opt-level = 3
+lto = true
+panic = "abort"
