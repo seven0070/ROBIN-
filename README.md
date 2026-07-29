@@ -22,7 +22,7 @@ USB → bootloader → carry::kernel_main → aergon::init
   → Manifest::load_from_secure_enclave → engine::start
 ```
 
-On first boot the VGA console shows:
+On first boot the VGA/serial console shows:
 
 ```
 Aergon Microkernel Initializing...
@@ -30,7 +30,8 @@ Hardware Probe: USB, Display, Memory... [OK]
 Carry OS Loaded into RAM.
 Verifying Identity and Manifest...
 Waking Robin Engine...
-OmniRoute: Cloud Spillover Permitted.
+Robin 50M Memory-Traversal Engine Online.
+OmniRoute: Offline-Only Mode Enforced.
 
 Hello. I am awake.
 >
